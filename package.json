@@ -1,0 +1,17 @@
+{
+  "name": "@sallaben/adapter-static-lambda",
+  "version": "0.0.1",
+  "description": "An adapter for [SvelteKit](https://kit.svelte.dev/) endpoints using AWS Lambda",
+  "author": "James Bray <yarbsemaj.com> & Steve Allaben",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sallaben/adapter-lambda.git"
+  },
+  "scripts": {
+    "build": "todo",
+    "test": "todo"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.10"
+  }
+}
