@@ -30,8 +30,11 @@ module.exports = function (overrides = {}) {
       builder.writeClient(clientDir)
       builder.writeStatic(clientDir)
 
-			builder.log.minor('Prerendering static pages');
-      await builder.prerender({ dest: clientDir });
+			builder.log(`Prerendering assets in '${clientDir}'`)
+      await builder.prerender({ 
+				all: true,
+				dest: clientDir
+			})
 
 			builder.log(`Writing Lambda server to '${tempDir}'`)
       builder.writeServer(tempDir)
